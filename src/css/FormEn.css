@@ -1,0 +1,187 @@
+body,
+html,
+*{
+    font-family: Almarai, sans-serif;
+}
+.parent{
+    margin: 0 !important;
+}
+.contact-form{
+    width: 696px;
+    height: 978px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact-form-content{
+    height: 890px;
+    gap: 3px;
+    margin-left: -27px;
+}
+
+.contact-form .groub .feild:focus{
+     box-shadow: 0 0 0 0.25rem #F8B517;
+}
+.contact-form .groub p{
+    color: red;
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    width: fit-content;
+}
+
+.contact-form .groub .name{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+}
+.contact-form .groub .feild{
+    width: 100%;
+    height: 48px;
+    border: 1.5px solid;
+    border-radius: 8px;
+    padding: 8px, 16px, 8px, 16px;
+}
+.contact-form .groub .feild-special:focus{
+    box-shadow: 0 0 0 0.25rem #F8B517;
+}
+.contact-form .groub .feild-special{
+    width: 100%;
+    height: 217px;
+    padding: 8px, 16px, 8px, 16px;
+    border: 1.5px solid ;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+}
+
+.main-btn{
+    width: 132px !important;
+    height: 56px  !important;
+    border: none !important;
+    border-radius: 8px  !important;
+    background-color: #F8B517  !important;
+    align-self: flex-end  !important;
+    margin-top:auto  !important;
+    font-size: 20px  !important;
+    font-weight: 500  !important;
+    color: black !important;
+    /* margin-right: 40px; */
+}
+.contact-image{
+    margin-left: 53px;
+    margin-right: -45px;
+}
+
+/* mobile screen */
+@media (max-width:768px) {
+    .contact-form-content{
+        gap: 2px;
+        margin-left: -2px;
+    }
+    .contact-form-content hr{
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    }
+    .contact-form,
+    .contact-form-content,
+    .contact-form .groub .feild,
+    .contact-form .groub .feild-special
+    {
+        width: 350px;
+        align-items: center ;
+        text-align: justify;
+    }
+    .main-btn{
+        align-self: center !important;
+        width: 200px !important;
+        margin-right: 0;
+        margin-top: 20px !important;
+    }
+    .contact-image{
+        justify-content: center !important;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .contact-image img{
+        width: 350px;
+        margin-top: 16px !important;
+        justify-content: center !important;
+        justify-self: center;
+    }
+}
+
+/* tablet screen */
+@media (min-width:768px) and (max-width:769px){
+    .contact-form-content{
+        gap: 2px;
+        margin-left: -2px;
+    }
+    .contact-form-content hr{
+        width: 85% !important;
+        margin-bottom: 10px !important;
+    }
+    .contact-form,
+    .contact-form-content,
+    .contact-form .groub .feild,
+    .contact-form .groub .feild-special
+    {
+        width: 550px;
+        align-items: center ;
+        text-align: justify;
+    }
+    .main-btn{
+        align-self: center !important;
+        width: 200px !important;
+        margin-right: 0;
+        margin-top: 20px !important;
+    }
+    .contact-image{
+        justify-content: center !important;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .contact-image img{
+        width: 550px;
+        margin-top: 16px !important;
+        justify-content: center !important;
+        justify-self: center;
+    }
+} 
+
+/* large screen */
+@media (min-width:769px) and (max-width:1024px) {
+    .contact-form-content hr{
+        width: 80% !important;
+        margin-bottom: 10px !important;
+    }
+    .contact-form,
+    .contact-form-content,
+    .contact-form .groub .feild,
+    .contact-form .groub .feild-special
+    {
+        width: 400px;
+        align-items: flex-start ;
+        /* text-align: justify; */
+    }
+    .main-btn{
+        align-self: center !important;
+        width: 200px !important;
+        margin-right: 110px;
+        margin-top: 70px !important;
+    }
+    .contact-image{
+        justify-content: center !important;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .contact-image img{
+        width: 500px;
+        margin-top: 16px !important;
+        margin-right: 22px;
+        justify-content: center !important;
+        justify-self: center;
+    }
+}
